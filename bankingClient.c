@@ -94,23 +94,7 @@ int main(int argc, char *argv[]){
         printf("Connecting to server...\n");
 	sleep(1);
     }
-    /*
-    struct sockaddr *addr;
-    int socketFD = accept(socketNum, addr, NULL);
-    recieve data and put into buffer
-    char buffer[500]; 
-    int bufferLen = recv(socketNum, buffer, 500, 0);
-    buffer[bufferLen] = '\0';
-    printf("Received %s (%d bytes).\n", buffer, bufferLen);
-
-    char command[500] = "create accountName";
-    scanf("%d", &command);
-    send(socketFD, command, strlen(command), 0); 
-    int x = 0;
-    if(x = read(socketNum, recv
-    close(socketNum);
-    return EXIT_SUCCESS;
-    */
+    
     pthread_t commandInput;
     pthread_t responseOutput;
     
